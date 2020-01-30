@@ -1,0 +1,24 @@
+{
+  "name": "@bone/process-manager",
+  "version": "0.0.1",
+  "repository": "https://github.com/Bergx2/bone-common-lib/packages/process-manager",
+  "license": "MIT",
+  "author": "tiago@bergx2.de",
+  "main": "index.js",
+  "dependencies": {
+    "@bone/logger": "ssh://git@github.com:Bergx2/bone-common-lib.git#bone-logger-v0.0.1-gitpkg",
+    "bluebird": "^3.7.1",
+    "lodash": "^4.17.15"
+  },
+  "scripts": {
+    "publishpackage": "gitpkg publish --registry git@github.com:Bergx2/bone-common-lib.git"
+  },
+  "engines": {
+    "node": ">=12.13.0",
+    "yarn": ">=1.19.1"
+  },
+  "os": [
+    "darwin",
+    "linux"
+  ]
+}
