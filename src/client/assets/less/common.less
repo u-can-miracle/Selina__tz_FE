@@ -1,60 +1,36 @@
 @import 'meta/variables';
 
-.brand{
-	color: @theme-color
+#root{
+	min-height: 100vh;
 }
 
-.overlay-link{
-	color: @overlay-color;
+.container{
+	width: 100%;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
-.link-white{
-	border: none;
-	background: transparent;
-	color: @overlay-color;
-	&:hover{
-		color: @link-white-hover-color;
-	}
+.app-wrapper{
+	min-height: 100vh;
 }
 
-.navigation-link{
-	text-decoration: none;
-	color: @primary-text-color;
+.app-wrapper{
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
 }
 
-.navigation-link-overlay{
-	text-decoration: none;
-	color: @overlay-color;
+.main-content{
+	flex: 1;
+	flex-grow: 1;
 }
 
-.vertical-dash{
-	margin-left: 8px;
-	margin-right: 7px;
-	color: @overlay-color;
+.full-height{
+	height: 100%;
 }
 
-.theme-btn{
-	display: inline-block;
+.responsive-img{
 	height: auto;
-	line-height: auto;
-	line-height: normal;
-	padding: 13px 30px 13px;
-	border: 1px solid @brand-color;
-	border-radius: 0;
-	font-size: 16px;
-	background: rgba(@brand-color, 1);
-	color: @overlay-color;
-	.transition();
-	&.btn-large{
-		padding: 14px 60px 15px;
-		font-size: 18px;
-	}
-	&.btn-hover-transparent:hover{
-		background: rgba(@brand-color, 0.1);
-		color: @overlay-color;
-	}
-	&:hover{
-		background: lighten(@brand-color, 25%);
-		color: @overlay-color;
-	}
+	max-width: 100%;
+	width: 100%;
 }

@@ -1,0 +1,33 @@
+.item-list{
+	position: absolute;
+	top: 100%;
+	right: 0;
+	z-index: 5;
+	background: @primary-bg;
+}
+
+.item-list__item{
+	padding: 5px 8px;
+	border: 1px solid @border-color;
+	white-space: nowrap;
+	color: @primary-text-color;
+	cursor: pointer;
+	&:hover{
+		background: @secondary-bg;
+	}
+	&.item-list__link-wrapper{
+		padding: 0;
+	}
+}
+
+
+.item-list__link{
+	display: block;
+	padding: 5px 8px;
+	text-decoration: none;
+	color: @primary-text-color;
+	&:hover{
+		text-decoration: underline;
+		background: @secondary-bg;
+	}
+}

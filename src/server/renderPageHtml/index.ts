@@ -1,15 +1,6 @@
 import renderReactAppHtml from './renderReactAppHtml'
-// import getPreloadedState from '../utils/getPreloadedState'
 
-async function renderPageHtml(
-	req,
-): Promise<string> {
-	// const preloadedState = await getPreloadedState(
-	// 	req.headers,
-	// 	hash,
-	// 	newPassword,
-	// 	req.originalUrl,
-	// )
+async function renderPageHtml(req): Promise<string> {
 	const reactAppHtml = renderReactAppHtml(req.url)
 
 	return `
@@ -20,6 +11,17 @@ async function renderPageHtml(
 	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	  <title>Document</title>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			charset="UTF-8"
+			href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
+		/>
 		<link rel="stylesheet" href="/style.css">
 	</head>
 	<body>
@@ -29,7 +31,5 @@ async function renderPageHtml(
 	</html>
 	`
 }
-
-// <script>window.__INITIAL_STATE__= ${JSON.stringify(preloadedState)}</script>
 
 export default renderPageHtml

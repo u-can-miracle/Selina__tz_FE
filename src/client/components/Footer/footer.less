@@ -1,0 +1,30 @@
+.footer{
+	height: 64px;
+	display: flex;
+	align-items: center;
+	background: @black-bg;
+	color: @overlay-color;
+	.footer-list{
+		position: static;
+		display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+		border: none;
+		background: transparent;
+	}
+
+	.footer-list__item{
+		border: none;
+		background: transparent;
+		color: @overlay-color;
+	}
+
+	.footer-list__link{
+		text-decoration: none;
+		color: @overlay-color;
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+}

@@ -1,19 +1,27 @@
-@import 'antd/all';
-
 @import 'meta/reset';
 @import 'meta/variables';
 @import 'meta/mixins';
 @import 'meta/extends';
 
-@import 'main';
 @import 'common';
+@import 'slick-override';
 
 
 // Containers
 @import '../../containers/App/app';
 
+
 // Routes
 @import '../../routes/Home/home';
+@import '../../routes/Location/location';
 
 
 // Components
+@import '../../components/Header/header';
+@import '../../components/Footer/footer';
+@import '../../components/CountriesList/countries-list';
+
+
+// common
+@import '../../components/common/Hoverable/hoverable';
+@import '../../components/common/ItemsList/items';
